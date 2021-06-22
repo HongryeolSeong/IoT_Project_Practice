@@ -19,7 +19,7 @@
                 <Button Name="btntb3" Content="Table3" Margin="30" Click="btntb3_Click"/>
                 <Button Name="btntb4" Content="Table4" Margin="30" Click="btntb4_Click"/>
             </UniformGrid>
-            <Button x:Name="BtnBack" Content="Back" Margin="300, 0, 300, 0" Click="BtnBack_Click"/>
+            <Button x:Name="BtnBack" Content="뒤로가기" Margin="300, 0, 300, 0" Click="BtnBack_Click"/>
         </StackPanel>
     </Grid>
 </Page>

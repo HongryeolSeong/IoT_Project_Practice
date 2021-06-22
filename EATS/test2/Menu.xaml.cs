@@ -57,85 +57,17 @@ namespace test
 
         private void BtnOrder_Click(object sender, RoutedEventArgs e)
         {
-            TxtRes.Text = string.Format("주문된 메뉴는 {0}이고,\n" +
+            /*TxtRes.Text = string.Format("주문된 메뉴는 {0}이고,\n" +
                 " 수량은 A:{1}개, B:{2}개\n" +
                 "          C:{3}개, D:{4}개 입니다.",
                 m, a.num, b.num, c.num, d.num);
-            Delay(5000);
-            NavigationService.Navigate(new Uri("/Page1.xaml", UriKind.Relative));
+            Delay(5000);*/
+            NavigationService.Navigate(new Uri("/Pay.xaml", UriKind.Relative));
         }
 
         private void BtnBack_Click(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(new Uri("/Table.xaml", UriKind.Relative));
-        }
-
-        private void CbA_Checked(object sender, RoutedEventArgs e)
-        {
-            if (m == null)
-            {
-                m += "A";
-            }
-            else
-            {
-                m += ", A";
-            }
-        }
-
-        private void CbB_Checked(object sender, RoutedEventArgs e)
-        {
-            if (m == null)
-            {
-                m += "B";
-            }
-            else
-            {
-                m += ", B";
-            }
-        }
-
-        private void CbC_Checked(object sender, RoutedEventArgs e)
-        {
-            if (m == null)
-            {
-                m += "C";
-            }
-            else
-            {
-                m += ", C";
-            }
-        }
-
-        private void CbD_Checked(object sender, RoutedEventArgs e)
-        {
-            if (m == null)
-            {
-                m += "D";
-            }
-            else
-            {
-                m += ", D";
-            }
-        }
-
-        private void BtnAplus_Click(object sender, RoutedEventArgs e)
-        {
-            a.num++;
-        }
-
-        private void BtnBplus_Click(object sender, RoutedEventArgs e)
-        {
-            b.num++;
-        }
-
-        private void BtnCplus_Click(object sender, RoutedEventArgs e)
-        {
-            c.num++;
-        }
-
-        private void BtnDplus_Click(object sender, RoutedEventArgs e)
-        {
-            d.num++;
         }
     }
 }

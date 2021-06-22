@@ -12,7 +12,7 @@
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
             <TextBlock x:Name="TxtThank" Text="감사합니다!" FontSize="40" Margin="100, 0, 100, 0"/>
             <TextBlock x:Name="TxtRes" HorizontalAlignment="Center" 
-                       Text="주문된 메뉴" Margin="30"/>
+                       Text="예상 조리 시간은 00:00입니다." Margin="30"/>
         </StackPanel>
     </Grid>
 </Page>

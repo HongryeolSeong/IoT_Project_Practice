@@ -8,7 +8,78 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Pay">
 
-    <Grid>
-        
+    <Grid Width="300" Height="400" >
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <GroupBox x:Name="Gb1" Grid.Row="0" Grid.ColumnSpan="5" 
+                  HorizontalAlignment="Center" Header="선택 메뉴1">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock x:Name="m1" FontSize="15" Text="menu1"
+                               HorizontalAlignment="Center" VerticalAlignment="Center" 
+                           Margin="5, 0"/>
+                <Button x:Name="btrm1" FontSize="20" Content="X" Margin="5, 0"
+                        HorizontalAlignment="Center" VerticalAlignment="Center" Height="31"/>
+                <Button x:Name="btmin1" FontSize="20" Content="-" />
+                <TextBox x:Name="mn1" FontSize="20" Width="50"
+                             HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <Button x:Name="btplu1" FontSize="20" Content="+" />
+            </StackPanel>
+        </GroupBox>
+        <GroupBox x:Name="Gb2" Grid.Row="1" Grid.ColumnSpan="5" 
+                  HorizontalAlignment="Center" Header="선택 메뉴2">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock x:Name="m2" FontSize="15" Text="menu2"
+                               HorizontalAlignment="Center" VerticalAlignment="Center" 
+                           Margin="5, 0"/>
+                <Button x:Name="btrm2" FontSize="20" Content="X" Margin="5, 0"
+                        HorizontalAlignment="Center" VerticalAlignment="Center" Height="31"/>
+                <Button x:Name="btmin2" FontSize="20" Content="-" />
+                <TextBox x:Name="mn2" FontSize="20" Width="50"
+                             HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <Button x:Name="btplu2" FontSize="20" Content="+" />
+            </StackPanel>
+        </GroupBox>
+        <GroupBox x:Name="Gb3" Grid.Row="2" Grid.ColumnSpan="5" 
+                  HorizontalAlignment="Center" Header="선택 메뉴3">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock x:Name="m3" FontSize="15" Text="menu3"
+                               HorizontalAlignment="Center" VerticalAlignment="Center" 
+                           Margin="5, 0"/>
+                <Button x:Name="btrm3" FontSize="20" Content="X" Margin="5, 0"
+                        HorizontalAlignment="Center" VerticalAlignment="Center" Height="31"/>
+                <Button x:Name="btmin3" FontSize="20" Content="-" />
+                <TextBox x:Name="mn3" FontSize="20" Width="50"
+                             HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <Button x:Name="btplu3" FontSize="20" Content="+" />
+            </StackPanel>
+        </GroupBox>
+        <GroupBox x:Name="Gb4" Grid.Row="3" Grid.ColumnSpan="5" 
+                  HorizontalAlignment="Center" Header="선택 메뉴4">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock x:Name="m4" FontSize="15" Text="menu4"
+                               HorizontalAlignment="Center" VerticalAlignment="Center" 
+                           Margin="5, 0"/>
+                <Button x:Name="btrm4" FontSize="20" Content="X" Margin="5, 0"
+                        HorizontalAlignment="Center" VerticalAlignment="Center" Height="31"/>
+                <Button x:Name="btmin4" FontSize="20" Content="-" />
+                <TextBox x:Name="mn4" FontSize="20" Width="50"
+                             HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <Button x:Name="btplu4" FontSize="20" Content="+" />
+            </StackPanel>
+        </GroupBox>
+
+        <Button x:Name="btncash" Grid.ColumnSpan="5" Content="현금 결제"
+                Grid.Row="4" Margin="100, 15"
+                Click="btncash_Click"/>
+        <Button x:Name="btncard" Grid.ColumnSpan="5" Content="카드 결제"
+                Grid.Row="5" Margin="100, 15"
+                Click="btncard_Click"/>
     </Grid>
 </Page>
