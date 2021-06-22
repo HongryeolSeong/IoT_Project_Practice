@@ -7,13 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" Background="WhiteSmoke"
         x:Name="Main">
-    <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
-        <StackPanel>
-            <TextBlock Name="TbWel" FontSize="70">Welcome!</TextBlock>
-            <Button Name="btnStart" Margin="30" Click="btnStart_Click" >주문 시작</Button>
-            <TextBlock Name="Dclock" FontSize="20" 
-                    HorizontalAlignment="Center"
-                    VerticalAlignment="Center"/>
-        </StackPanel>
+    <Grid>
+        <Frame Source="/Page1.xaml" NavigationUIVisibility="Hidden" />
     </Grid>
 </Window>

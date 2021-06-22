@@ -1,0 +1,26 @@
+﻿<Page x:Class="test.Menu"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:test"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Menu">
+
+    <Grid>
+        <StackPanel>
+            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center"
+                       FontSize="30" Margin="0, 0, 0, 20">메뉴 선택</TextBlock>
+            <StackPanel>
+                <CheckBox Content="A메뉴" FontSize="20" Margin="10"/>
+                <CheckBox Content="B메뉴" FontSize="20" Margin="10"/>
+                <CheckBox Content="C메뉴" FontSize="20" Margin="10"/>
+                <CheckBox Content="D메뉴" FontSize="20" Margin="10"/>
+                <CheckBox Content="E메뉴" FontSize="20" Margin="10"/>
+                <CheckBox Content="F메뉴" FontSize="20" Margin="10"/>
+                <Button Content="주문 완료" HorizontalAlignment="Right" Margin="0, 30, 30, 0"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>

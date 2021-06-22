@@ -24,23 +24,6 @@ namespace test
         public MainWindow()
         {
             InitializeComponent();
-
-            DispatcherTimer timer = new DispatcherTimer();
-            timer.Interval = new TimeSpan(0, 0, 1);
-            timer.Tick += Timer_Tick;
-            timer.Start();
-        }
-
-        private void Timer_Tick(object sender, EventArgs e)
-        {
-            Dclock.Text = DateTime.Now.ToString();
-        }
-
-        private void btnStart_Click(object sender, RoutedEventArgs e)
-        {
-            Table table = new Table();
-            table.Title = "Table";
-            this.Content = table;
         }
     }
 }

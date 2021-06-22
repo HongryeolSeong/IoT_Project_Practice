@@ -17,11 +17,13 @@ using System.Windows.Threading;
 namespace test
 {
     /// <summary>
-    /// MainWindow.xaml에 대한 상호 작용 논리
+    /// Page1.xaml에 대한 상호 작용 논리
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Page1 : Page
     {
-        public MainWindow()
+        private object wnum = 0;
+
+        public Page1()
         {
             InitializeComponent();
 
@@ -38,9 +40,13 @@ namespace test
 
         private void btnStart_Click(object sender, RoutedEventArgs e)
         {
-            Table table = new Table();
-            table.Title = "Table";
-            this.Content = table;
+            NavigationService.Navigate(new Uri("/Table.xaml", UriKind.Relative));
+        }
+
+        private void TxtWait_Loaded(object sender, RoutedEventArgs e)
+        {
+            TxtWait.Text = string.Format("현재 대기 팀은 {0}팀 이고,\n" +
+                "예상 대기 시간은 00:00입니다.", wnum);
         }
     }
 }

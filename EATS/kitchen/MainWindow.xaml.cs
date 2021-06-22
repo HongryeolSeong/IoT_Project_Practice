@@ -12,9 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using System.Windows.Threading;
 
-namespace test
+namespace kitchen
 {
     /// <summary>
     /// MainWindow.xaml에 대한 상호 작용 논리
@@ -24,23 +23,6 @@ namespace test
         public MainWindow()
         {
             InitializeComponent();
-
-            DispatcherTimer timer = new DispatcherTimer();
-            timer.Interval = new TimeSpan(0, 0, 1);
-            timer.Tick += Timer_Tick;
-            timer.Start();
-        }
-
-        private void Timer_Tick(object sender, EventArgs e)
-        {
-            Dclock.Text = DateTime.Now.ToString();
-        }
-
-        private void btnStart_Click(object sender, RoutedEventArgs e)
-        {
-            Table table = new Table();
-            table.Title = "Table";
-            this.Content = table;
         }
     }
 }
