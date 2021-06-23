@@ -16,28 +16,23 @@ using System.Windows.Shapes;
 namespace kitchen
 {
     /// <summary>
-    /// Page1.xaml에 대한 상호 작용 논리
+    /// Serving.xaml에 대한 상호 작용 논리
     /// </summary>
-    public partial class Page1 : Page
+    public partial class Serving : Page
     {
-        public Page1()
+        public Serving()
         {
             InitializeComponent();
         }
 
-        private void BtnOrderList_Click(object sender, RoutedEventArgs e)
+        private void BtnServ_Click(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(new Uri("/OrderList/OrderList.xaml", UriKind.Relative));
         }
 
-        private void BtnDeact_Click(object sender, RoutedEventArgs e)
+        private void Btnback_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Uri("/MenuActivate/MenuDeact.xaml", UriKind.Relative));
-        }
-
-        private void BtnAdmin_Click(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new Uri("/Login/Login.xaml", UriKind.Relative));
+            NavigationService.Navigate(new Uri("/OrderList/OrderList.xaml", UriKind.Relative));
         }
     }
 }

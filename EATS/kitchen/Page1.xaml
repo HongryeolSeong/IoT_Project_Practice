@@ -8,7 +8,32 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Page1">
 
-    <Grid>
-        
+    <Grid Height="400">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Text="점포 관리 화면" Grid.ColumnSpan="2"
+                   FontSize="30"
+                   HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Button x:Name="BtnOrderList" Click="BtnOrderList_Click"
+                Grid.Row="1" Grid.Column="0" Margin="20"
+                Content="주문 리스트 확인" FontSize="30"/>
+        <TextBlock x:Name="TxtWait" Text="현재 대기인원은 0명입니다."
+                   Grid.Row="1" Grid.Column="1" FontSize="20"
+                   HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Button x:Name="BtnDeact" Click="BtnDeact_Click"
+                Grid.Row="2" Grid.Column="0" Margin="20"
+                Content="메뉴 활성화/비활성화" FontSize="30"/>
+        <Button x:Name="BtnAdmin"
+                Grid.Row="2" Grid.Column="1" Margin="20"
+                Content="관리자 모드" FontSize="30"
+                Click="BtnAdmin_Click"/>
     </Grid>
 </Page>

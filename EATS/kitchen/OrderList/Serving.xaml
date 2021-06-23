@@ -1,0 +1,22 @@
+﻿<Page x:Class="kitchen.Serving"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:kitchen"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Serving">
+
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="서빙을 보내시겠습니까?" FontSize="40"/>
+            <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+                <Button x:Name="BtnServ" Margin="20" Width="100" Content="예"
+                        Click="BtnServ_Click"/>
+                <Button x:Name="Btnback" Margin="20" Width="100" Content="뒤로가기"
+                        Click="Btnback_Click"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>

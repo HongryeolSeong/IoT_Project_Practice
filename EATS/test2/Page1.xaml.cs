@@ -31,6 +31,8 @@ namespace test
             timer.Interval = new TimeSpan(0, 0, 1);
             timer.Tick += Timer_Tick;
             timer.Start();
+
+            
         }
 
         private void Timer_Tick(object sender, EventArgs e)

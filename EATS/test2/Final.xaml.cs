@@ -26,7 +26,6 @@ namespace test
         public Final()
         {
             InitializeComponent();
-            Shown += Final_Shown;
         }
 
         private static DateTime Delay(int MS)
@@ -44,11 +43,9 @@ namespace test
             return DateTime.Now;
         }
 
-        private void Final_Shown(object sender, EventArgs e)
+        private void BtnEnd_Click(object sender, RoutedEventArgs e)
         {
-            Delay(1000);
             NavigationService.Navigate(new Uri("/Page1.xaml", UriKind.Relative));
         }
-
     }
 }
