@@ -24,10 +24,10 @@
                 <StackPanel HorizontalAlignment="Center"
                             VerticalAlignment="Center">
                     <UniformGrid Width="400" Height="300">
-                        <Button x:Name="BtnA" Margin="10"/>
-                        <Button x:Name="BtnB" Margin="10"/>
-                        <Button x:Name="BtnC" Margin="10"/>
-                        <Button x:Name="BtnD" Margin="10"/>
+                        <Button x:Name="BtnA" Margin="10" Content="Menu1"/>
+                        <Button x:Name="BtnB" Margin="10" Content="Menu2"/>
+                        <Button x:Name="BtnC" Margin="10" Content="Menu3"/>
+                        <Button x:Name="BtnD" Margin="10" Content="Menu4"/>
                     </UniformGrid>
                 </StackPanel>
                 
