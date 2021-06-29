@@ -32,7 +32,7 @@ namespace test
             timer.Tick += Timer_Tick;
             timer.Start();
 
-            
+
         }
 
         private void Timer_Tick(object sender, EventArgs e)
@@ -47,7 +47,7 @@ namespace test
 
         private void TxtWait_Loaded(object sender, RoutedEventArgs e)
         {
-            TxtWait.Text = string.Format("현재 대기 팀은 {0}팀 이고,\n" +
+            TxtWait.Text = string.Format($"현재 대기팀 수는 {Commons.wait}팀 이고,\n" +
                 "예상 대기 시간은 00:00입니다.", wnum);
         }
     }

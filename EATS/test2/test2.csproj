@@ -68,6 +68,7 @@
     <Compile Include="Final.xaml.cs">
       <DependentUpon>Final.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Helper\Commons.cs" />
     <Compile Include="Menu.xaml.cs">
       <DependentUpon>Menu.xaml</DependentUpon>
     </Compile>
@@ -193,5 +194,6 @@
   <ItemGroup>
     <Resource Include="Themes\Metro\HowToApplyTheme.txt" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

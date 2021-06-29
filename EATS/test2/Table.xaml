@@ -19,7 +19,15 @@
                 <Button Name="btntb3" Content="Table3" Margin="30" Click="btntb3_Click"/>
                 <Button Name="btntb4" Content="Table4" Margin="30" Click="btntb4_Click"/>
             </UniformGrid>
-            <Button x:Name="BtnBack" Content="뒤로가기" Margin="300, 0, 300, 0" Click="BtnBack_Click"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button x:Name="BtnBack" Content="뒤로가기" Width="200" Margin="35, 0"
+                        Click="BtnBack_Click"/>
+                <TextBlock x:Name="TxtWait" Text="현재 만석입니다. 대기 번호를 생성해주세요."
+                           VerticalAlignment="Center" Margin="0, 0, 20, 0" Visibility="Hidden"/>
+            </StackPanel>
+            <Button x:Name="BtnWait" Content="대기 번호 생성" Width="200"
+                    HorizontalAlignment="Right" Margin="20, 0, 20, 30" IsEnabled="False"
+                    Click="BtnWait_Click"/>
         </StackPanel>
     </Grid>
 </Page>

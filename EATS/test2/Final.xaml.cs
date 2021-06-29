@@ -26,21 +26,12 @@ namespace test
         public Final()
         {
             InitializeComponent();
+            Loaded += Final_Loaded;
         }
 
-        private static DateTime Delay(int MS)
+        private void Final_Loaded(object sender, RoutedEventArgs e)
         {
-            DateTime ThisMoment = DateTime.Now;
-            TimeSpan duration = new TimeSpan(0, 0, 0, 0, MS);
-            DateTime AfterWards = ThisMoment.Add(duration);
-
-            while (AfterWards >= ThisMoment)
-            {
-                System.Windows.Forms.Application.DoEvents();
-                ThisMoment = DateTime.Now;
-            }
-
-            return DateTime.Now;
+            TxtTable.Text = $"선택하신 테이블은 {Commons.seat[Commons.seat.Count - 1]}번 입니다.";
         }
 
         private void BtnEnd_Click(object sender, RoutedEventArgs e)
